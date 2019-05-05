@@ -1,4 +1,4 @@
-### BirFatura'daki ikinci 20 günlük stajımda, monday.com'a benzer, hataların gerçek zamanlı takip edilebileceği bir web site projesi geliştirmem istendi ve bu projeyi staj sürecim tamamlandığında kullanıma hazır bir hale getirdim. Bu projeyi 8 ay boyunca aktif bir şekilde şirket içerisinde kullandık. 8 ay sonunda proje yerini Jira'ya bıraktı. ###
+### BirFatura'daki ikinci 20 günlük stajımda, monday.com'a benzer, hataların gerçek zamanlı takip edilebileceği bir web site projesi geliştirmem istendi ve bu projeyi staj sürecim tamamlandığında kullanıma hazır bir hale getirdim. Bu projeyi 8 ay boyunca aktif bir şekilde şirket içerisinde kullandık. 8 ay sonunda proje yerini Jira'ya bıraktı. (2018) ###
 ---
 **İÇİNDEKİLER**
 
