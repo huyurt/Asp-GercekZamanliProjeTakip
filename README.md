@@ -2,7 +2,7 @@
 ---
 **İÇİNDEKİLER**
 
-**1.  HATA TAKİP SİSTEMİ**
+**1.  PROJE TAKİP SİSTEMİ**
 
     1.  Amaç
 
@@ -10,17 +10,17 @@
 
     3.  Gereksinimlerin Belirlenmesi
 
-    4.  Kuruluşun Kullandığı Hata Takip Sisteminin Yapısı
+    4.  Kuruluşun Kullandığı Proje Takip Sisteminin Yapısı
 
-    5.  Hata Takip Sisteminin Veri Tabanı Yapısı
+    5.  Proje Takip Sisteminin Veri Tabanı Yapısı
 
     6.  Uygulama
 
-        1.  Hata takip sistemi projesinin oluşturulması
+        1.  Proje takip sistemi projesinin oluşturulması
 
-        2.  Hata takip sisteminin kullanıcı ara yüzü stili ve navigation bar
+        2.  Proje takip sisteminin kullanıcı ara yüzü stili ve navigation bar
 
-        3.  Hata takip sisteminin tablo yapısı
+        3.  Proje takip sisteminin tablo yapısı
 
         4.  Web Api mantığı ile verilerin gönderilmesi, Ajax ile elde edilmesi
             ve cache’lenmesi
@@ -36,15 +36,15 @@
         9.  SignalR kitaplığı ile tabloya veri eklenmesi, verilerin düzenlenmesi
             ve arşivlenmesi
 
-        10. Hata takip sistemi konuşmalarının yapısı
+        10. Proje takip sistemi konuşmalarının yapısı
 
-        11. Hata takip sisteminin kişisel web sayfaları
+        11. Proje takip sisteminin kişisel web sayfaları
 
-        12. Hata takip sisteminin timeline yapısı
+        12. Proje takip sisteminin timeline yapısı
 
-        13. Hata takip sisteminin e-posta gönderme sistemi
+        13. Proje takip sisteminin e-posta gönderme sistemi
 
-        14. Hata takip sisteminin yayımlanması
+        14. Proje takip sisteminin yayımlanması
 
     7.  Öneriler
 
@@ -53,7 +53,7 @@
 **3.  EK – 1. Terimler**
 
 
-1.  **HATA TAKİP SİSTEMİ**
+1.  **PROJE TAKİP SİSTEMİ**
 
     1.  **Amaç**
 
@@ -87,9 +87,9 @@ dolar ücret ödeyerek kullandıkları sistemin benzer işlevlerine sahip, Micro
 sağlayarak, hem proje geliştirme takibi, hem de proje hata takibi yapmalarını
 kolaylaştırmaktadır.
 
-Geliştirdiğim bu hata takip sistemi ile kuruluşun halihazırda kullandığı sistem
+Geliştirdiğim bu proje takip sistemi ile kuruluşun halihazırda kullandığı sistem
 yerine kendi sistemini kullanarak kuruluşun ihtiyaçlarına göre, sistem üzerinde
-değişiklikler yaparak, daha özelleştirilebilir bir hata takip sistemine
+değişiklikler yaparak, daha özelleştirilebilir bir proje takip sistemine
 geçmesi, halihazırda kullandığı sistem için kuruluşun harcadığı maliyetin
 azaltılması, kuruluşun geleceğe dair proje geliştirme fikirlerinin üçüncü
 kişilerce erişilebilirliğinin engellenmeye çalışılması ve kuruluşun ihtiyaçları
@@ -112,7 +112,7 @@ Bootstrap, Metronic, DayPilot, CKEditor, Moment
 servisi, html-color-codes.info
 
 Staj yaptığım kuruluş, geliştirdiği çözümleri için Microsoft Azure Bulut
-Sistemi’ni kullandığı için, benden, hata takip sistemini ASP.NET uygulaması
+Sistemi’ni kullandığı için, benden, proje takip sistemini ASP.NET uygulaması
 olarak geliştirmem istendi. Dolayısıyla bu projeyi geliştirirken Visual Studio
 geliştirme ortamını kullandım.
 
@@ -131,18 +131,18 @@ tabanında hafifletebilmek amacıyla istemciye gönderilen bazı bilgilerin sunu
 tarafında cache’lenmesini sağlamak için Strathweb.CacheOutput kitaplığını
 kullandım.
 
-Hata takip sistemini kullanacak kişilerin, sistemi kullandıkları an yapacakları
+Proje takip sistemini kullanacak kişilerin, sistemi kullandıkları an yapacakları
 veri ekleme, silme ve güncelleme gibi işlemleri gerçekleştirdikleri anda,
 sistemi kullanan diğer kişilerin de sayfayı yenilemeye ihtiyaç duymadan veriler
 üzerinde gerçekleşen değişiklikleri anlık olarak görebilmelerini sağlamak
 amacıyla SignalR kitaplığını kullandım. SignalR kitaplığını kullanarak,
-geliştirdiğim hata takip sistemini WebSocket protokolünden yararlanarak gerçek
+geliştirdiğim proje takip sistemini WebSocket protokolünden yararlanarak gerçek
 zamanlı bir ASP.NET uygulaması haline getirdim.
 
 Sistemin kullanıcı ara yüzü tasarımını Bootstrap, JQuery ve kuruluşun
 halihazırda kullandığı Metronic kitaplıklarını kullanarak yaptım.
 
-Geliştirdiğim hata takip sisteminde, kullanıcıların timeline
+Geliştirdiğim proje takip sisteminde, kullanıcıların timeline
 oluşturabilmelerini sağlamak için JavaScript programlama dili ile yazılmış olan
 DayPilot kitaplığından yararlandım.
 
@@ -163,7 +163,7 @@ kullandım [4].
 
 Projeyi web sunucusunda yayınlayabilmem için staj yaptığım kuruluşun kullandığı
 Turhost hosting servisinde yeni bir FTP hesabı oluşturup, bu hesap aracılığıyla
-FileZilla yazılımını kullanarak, geliştirdiğim hata takip sistemini kuruluşta
+FileZilla yazılımını kullanarak, geliştirdiğim proje takip sistemini kuruluşta
 çalışanların erişebileceği hale getirdim.
 
 1.  **Gereksinimlerin Belirlenmesi**
@@ -172,14 +172,14 @@ FileZilla yazılımını kullanarak, geliştirdiğim hata takip sistemini kurulu
 istediğini, sistemden beklentilerini anlattı. Geliştireceğim sistemin sahip
 olmasını istediği özellikleri:
 
--   monday.com web sitesinde kullandıkları *“Hata Takip”* sayfası için veri
+-   monday.com web sitesinde kullandıkları *“Proje Takip”* sayfası için veri
     girişinin yapılabileceği bir form alanı olmalı. Durum, öncelik ve kimde
     alanlarının her biri HTML elementi olan select ile seçilebilmeli. Girilen
     veriler, bir tablo yapısında gösterilmeli.
 
 ![](https://2.bp.blogspot.com/-fUdx_Oxr-Y4/XM7uw4fJUHI/AAAAAAAAC7A/N2oZLDl4b_Ayg4GpHBDa0ghSgApVqpFuQCLcBGAs/s1600/e90d3030f543420b48732aebb3e98740.png)
 
-Şekil 3.1. Kuruluşun kullandığı hata takip sisteminin Hata Takip web
+Şekil 3.1. Kuruluşun kullandığı proje takip sisteminin Proje Takip web
 sayfasından bir ekran görüntüsü
 
 -   Kullandıkları sistemde *“DevOps”* sayfasındaki gibi bir timeline’ın olması
@@ -188,7 +188,7 @@ sayfasından bir ekran görüntüsü
 
 ![](https://4.bp.blogspot.com/-s0H2tmdLBaQ/XM7uqcFhwrI/AAAAAAAAC5s/m-anw3VLKVgDMB3OgBw31menXG13LciUwCLcBGAs/s1600/6ce87a9f2a490f923a30ad659fd6a927.png)
 
-Şekil 3.2. Kuruluşun kullandığı hata takip sisteminin DevOps web sayfasından
+Şekil 3.2. Kuruluşun kullandığı proje takip sisteminin DevOps web sayfasından
 bir ekran görüntüsü
 
 -   Her sayfada, filtrelemenin yapılabileceği bir arama alanı olmalı.
@@ -211,7 +211,7 @@ başta oluştururken kimlik doğrulama seçeneğini bireysel kullanıcı hesapla
 olarak seçtiğim zaman, ASP.NET’in gerekli veri tabanı tablosu, sınıf ve aspx
 dosyalarını oluşturacağını belirtti.
 
-Hata takip sistemini geliştirmeye başlamadan önce, sistemi nasıl geliştirmeye
+Proje takip sistemini geliştirmeye başlamadan önce, sistemi nasıl geliştirmeye
 başlayacağıma karar verebilmem ve proje ihtiyaçlarını belirleyemem için
 kuruluşun monday.com web sitesinde kullandığı sistemi incelemeye başladım.
 İncelemelerim sonucunda, bana rehberlik yapan bilgisayar mühendisinin
@@ -253,21 +253,21 @@ performansın arttırılabileceğini öğrenmem sonrasında gereksinimlere:
 
 bulmayı da ekledim.
 
-1.  **Kuruluşun Kullandığı Hata Takip Sisteminin Yapısı**
+1.  **Kuruluşun Kullandığı Proje Takip Sisteminin Yapısı**
 
-Geliştireceğim hata takip sisteminin sahip olması gerektiği özellikler için
+Geliştireceğim proje takip sisteminin sahip olması gerektiği özellikler için
 gereksinimleri belirlememin ardından, kuruluşun kullandığı sistemin nasıl bir
 yapıda olduğunu tespit edebilmem için monday.com’daki sistemin yapısını
 inceledim.
 
 Sistem, toplamda 5 bölümden oluşmaktadır:
 
-*Hata Takip:* Bu bölüm, 5 tablodan oluşmaktadır. Her bir tablonun yapısı aynı
+*Proje Takip:* Bu bölüm, 5 tablodan oluşmaktadır. Her bir tablonun yapısı aynı
 olmakla birlikte, sadece tablo isimleri farklılık göstermektedir.
 
 ![](https://1.bp.blogspot.com/-Fp1qZTbdLYw/XM7upC0s5rI/AAAAAAAAC5g/GP3lJ7W_JU8iA653lo822HbaJ9BAfArSwCLcBGAs/s1600/5eb6f5ad177434fa69d735dbf8799828.png)
 
-Şekil 3.3. Hata Takip web sayfasındaki tablolar
+Şekil 3.3. Proje Takip web sayfasındaki tablolar
 
 Tabloların sütunları konu, müşteri e-postası, ekleyen, durum, öncelik, kimde ve
 eklenme tarihi olmak üzere 7 sütundan oluşmaktadır. Konu, müşteri e-postası,
@@ -278,11 +278,11 @@ almaktadır.
 
 ![](https://3.bp.blogspot.com/-buc7aKA4qXQ/XM7ukhfMAlI/AAAAAAAAC40/wc1zlxJG5EYO5-nQw0uS9Pd61dbA4Z7wACLcBGAs/s1600/1cada5ce49d4de962b55461b95ec718d.png)
 
-Şekil 3.4. Hata Takip durum sütunu değerleri
+Şekil 3.4. Proje Takip durum sütunu değerleri
 
 ![](https://3.bp.blogspot.com/-ltX9GW0rr0g/XM7usW3SXnI/AAAAAAAAC6E/hG1GSVYbx0E22xVkIn7uhwbnrUfsXe2wgCLcBGAs/s1600/9ad924e657a18b890c5c6575dd0150a3.png)
 
-Şekil 3.5. Hata Takip öncelik sütunu değerleri
+Şekil 3.5. Proje Takip öncelik sütunu değerleri
 
 *DevOps:* Bu bölüm, 2 tablodan oluşmaktadır. Her bir tablonun yapısı aynı
 olmakla birlikte, sadece tablo isimleri değişiklik göstermektedir.
@@ -294,12 +294,12 @@ olmakla birlikte, sadece tablo isimleri değişiklik göstermektedir.
 Tabloların sütunları konu, kimde, durum, öncelik, tahmini süre, eklenme tarihi
 ve timeline olmak üzere 7 sütundan oluşmaktadır. Konu, kimde, tahmini süre ve
 eklenme tarihi de dahil olmak üzere bu sütun değerleri string türünde değerler
-almaktadır. Hata Takip bölümde olduğu gibi bu bölümde de eklenme tarihinin
+almaktadır. Proje Takip bölümde olduğu gibi bu bölümde de eklenme tarihinin
 yanında ayrıca, tahmini süre timeline’dan elde edilmesi gerekirken, yine bu
 sütun değeri manuel olarak girilmek zorundadır. Durum sütunu 8 değer alırken,
 öncelik sütunu 5 değer almaktadır.
 
-Öncelik sütununun aldığı değerler Hata Takip bölümünde olduğu gibi değişmezken,
+Öncelik sütununun aldığı değerler Proje Takip bölümünde olduğu gibi değişmezken,
 durum sütununun aldığı değerler DevOps bölümünde değişiklik göstermektedir.
 
 ![https://1.bp.blogspot.com/-NTboyvSRm0o/XM7uvrP75lI/AAAAAAAAC6w/-hUX0IUaWFw_2GqAWr39m_BE7o4QuwE8ACLcBGAs/s1600/d99e16bc04a43251f2179766754683c1.png)
@@ -362,7 +362,7 @@ konuşma eklendiğine dair bilgilendirme e-postası gönderilmektedir.
 
 Şekil 3.9. Konuşmalar bölümünden bir ekran görüntüsü
 
-1.  **Hata Takip Sisteminin Veri Tabanı Yapısı**
+1.  **Proje Takip Sisteminin Veri Tabanı Yapısı**
 
 Rehberlik yapan bilgisayar mühendisi, geliştireceğim sistemin veri tabanının
 sadece 3 tablodan oluşmasını istedi. Sistemde oluşturacağım 5 ayrı bölümün tablo
@@ -390,7 +390,7 @@ geliştirdiğim sistemdeki tabloların satır verilerini sakladım.
 
 ![](https://2.bp.blogspot.com/-z4zoK5jrTZY/XM7uqgaNZQI/AAAAAAAAC5w/EnsQz4nu1yMVA-GbwhV1QeXCRnriKpKVgCLcBGAs/s1600/6fe38b6d5aae4a687ee42f34b0dcce08.png)
 
-Şekil 3.11. Hata takip sisteminin veri tabanı yapısı
+Şekil 3.11. Proje takip sisteminin veri tabanı yapısı
 
 ASP.NET kimlik doğrulayıcısının oluşturduğu AspNetUsers veri tabanı tablosuna
 eklediğim Silindi niteliği ile sakladığı 0 ya da 1 değerine göre kullanıcının
@@ -427,7 +427,7 @@ devam ettim. SignalR kitaplığının bunu gerçekleştirebileceğini öğrendim
 kitaplığını kullanarak, ASP.NET de sohbet uygulamalarının yapıldığı örneklerle
 karşılaştım [5]. Bunları inceleyerek SignalR kitaplığının kullanımını öğrendim.
 
-1.  **Hata takip sistemi projesinin oluşturulması**
+1.  **Proje takip sistemi projesinin oluşturulması**
 
 Daha sonrasında projeye başlamaya karar verdim. Visual Studio da ASP.NET Web
 Uygulaması (.NET Framework) olarak Web Forms ve Web API projesi oluşturdum.
@@ -436,7 +436,7 @@ doğrulamayı bireysel kullanıcı hesapları olarak seçtim.
 
 ![](https://3.bp.blogspot.com/-9dM_7V5If-M/XM7unAgl5RI/AAAAAAAAC5M/CeNrDGJtaFknrr8Ytk1-RvkKXrrdUFaEQCLcBGAs/s1600/33146df83cefd19a695316b031ebb240.png)
 
-Şekil 3.12. Hata takip sistemi projesinin oluşturulması
+Şekil 3.12. Proje takip sistemi projesinin oluşturulması
 
 SignalR ve LINQ kitaplıklarını kullanabilmek için, bu kitaplıkları Nuget paketi
 olarak projeye dahil ettim.
@@ -478,7 +478,7 @@ içeriği
 AspNetUsers veri tabanı tablosuna Name, Surname, Silindi ve Sayfa niteliklerini
 ekledim.
 
-1.  **Hata takip sisteminin kullanıcı ara yüzü stili ve navigation bar**
+1.  **Proje takip sisteminin kullanıcı ara yüzü stili ve navigation bar**
 
 Projenin web sayfalarının kullanıcı ara yüzü tasarımı için rehberlik yapan
 bilgisayar mühendisi kendi projeleri için kullandıkları Metronic kitaplığını
@@ -534,7 +534,7 @@ kodlarını yazdım.
 
 ![](https://3.bp.blogspot.com/-7iLNteGjSu0/XM7urRW-LzI/AAAAAAAAC58/34czriB5J_AFwrgAULlc_mHNfhshM6-JACLcBGAs/s1600/89000366db466139fdea10587f32b245.png)
 
-Şekil 3.16. Hata takip sisteminin navigation bar yapısı
+Şekil 3.16. Proje takip sisteminin navigation bar yapısı
 
 HataTakip sayfasının sınıfına, eğer bu sayfayı görüntülemeye çalışan kişi
 kullanıcı girişi yapmamışsa, kullanıcı girişi sayfasına yönlendiren kodları
@@ -568,9 +568,9 @@ protected void CikisYap_Click(object sender, EventArgs e)
 
 \</asp:LinkButton\>
 
-1.  **Hata takip sisteminin tablo yapısı**
+1.  **Proje takip sisteminin tablo yapısı**
 
-Daha sonrasında, hata takip sistemi için HataTakipMain, HataTakipKonusmalar ve
+Daha sonrasında, proje takip sistemi için HataTakipMain, HataTakipKonusmalar ve
 HataTakipDiger adlarında proje için gerekli veri tabanı tablolarını oluşturdum.
 Önceden belirttiğim gibi, HataTakipDiger veri tabanı tablosunun yapısına göre
 verileri ekledim.
@@ -898,12 +898,12 @@ yapabilir.
 
 ![](https://3.bp.blogspot.com/-sNrSNO4MPcE/XM7us10EaiI/AAAAAAAAC6M/DzyYvA0I_4oM6VCL6M-oSRA0tfXBx547wCLcBGAs/s1600/a969ba30791509b33ff6aa266e87da36.png)
 
-Şekil 3.23. Hata takip sisteminin içerik filtreleme yapısı
+Şekil 3.23. Proje takip sisteminin içerik filtreleme yapısı
 
 1.  **Tabloların küçültülmesi**
 
 Tabloların küçültülmesi için, tablo içeriklerinin gizlenmesini sağlayan JQuery
-kitaplığının sağladığı efekti kullanarak kullanıcının hata takip sistemi
+kitaplığının sağladığı efekti kullanarak kullanıcının proje takip sistemi
 kullanım deneyimini arttırmayı amaçladım [11]:
 
 function gizleGoster(element, id) {
@@ -1005,7 +1005,7 @@ aspx sayfasında bir form oluşturdum:
 Bu form ile sunucuya gönderilecek veri HataTakipMain veri tabanı tablosunun
 yapısına uygun olarak sunucuda düzenlenip, veri tabanına eklenecek. Projenin bu
 kısmında SignalR kitaplığını kullanarak form verilerini alıp, veri tabanı
-işlemlerinden sonra o anda hata takip sistemini kullanan kişilere değişen veya
+işlemlerinden sonra o anda proje takip sistemini kullanan kişilere değişen veya
 eklenen verilerin gösteriminin sağlanması gerekiyor.
 
 SignalR kitaplığını çalıştırabilmek için Startup.cs dosyasının Configuration
@@ -1022,7 +1022,7 @@ JavaScript’te SignalR metodu tetiklenecek ve sunucuda ilgili metot
 çalıştırılacak, sunucuda tetiklenen bu metot yine o an sistemi kullanan tüm
 kullanıcıların JavaScript’te başka bir metodunu tetikleyecek ve son olarak
 tetiklenen metot manipüle edilen verileri anlamlandırıp, tabloda değişiklik
-yapacak. Bu şekilde hata takip sistemine gerçek zamanlı uygulama özelliğini
+yapacak. Bu şekilde proje takip sistemine gerçek zamanlı uygulama özelliğini
 kazanacak. İstemci ile sunucu arasında gerçekleşen tüm bu işlemler WebSocket
 protokolünün sağladığı haberleşme altyapısı ile gerçekleşiyor.
 
@@ -1494,10 +1494,10 @@ function Arsivle(Id, konuMu = true) {
 
 }
 
-Bu şekilde, hata takip sisteminin veri ekleme, düzenleme ve silme işlemlerini
+Bu şekilde, proje takip sisteminin veri ekleme, düzenleme ve silme işlemlerini
 projeye gerçek zamanlı uygulama özelliği kazandırarak gerçekleştirmiş oldum.
 
-1.  **Hata takip sistemi konuşmalarının yapısı**
+1.  **Proje takip sistemi konuşmalarının yapısı**
 
 Daha sonra, konular içerisinde konuşmaların yapıldığı yapıya geçtim.
 
@@ -1575,7 +1575,7 @@ dokümantasyonlarını inceledim [14].
 
 ![](https://4.bp.blogspot.com/-FUaMfB5JFQU/XM7uksjkIHI/AAAAAAAAC44/yowSd_5wDSElXTcSFAhyqyhGfkaNAfgFQCLcBGAs/s1600/1247320e523fd4edd8886bd84c80eb69.png)
 
-Şekil 3.27. Hata takip sisteminin konuşmalar sistemi
+Şekil 3.27. Proje takip sisteminin konuşmalar sistemi
 
 Konuya özel yapılmış konuşmaların verisini alabilmek için DataController
 sınıfında şu metodu yazdım:
@@ -1718,7 +1718,7 @@ metotlarla gerçekleştirdim.
 
 ![](https://1.bp.blogspot.com/--8e7UMLfe8g/XM7ur9NHsQI/AAAAAAAAC6A/ESxkRX70dzUVkWQPQaBHXc3sdK9oU4b3gCLcBGAs/s1600/9a2ec5f0b31b1148c7372670d0a3e88a.png)
 
-Şekil 3.28. Hata takip sisteminde eklenen bir konuşmanın ekran görüntüsü
+Şekil 3.28. Proje takip sisteminde eklenen bir konuşmanın ekran görüntüsü
 
 Konuşma bölümünü jQuery kitaplığının sağladığı animasyon özelliklerini
 kullanarak, bu bölümü gösterilip gizlenebilir hale getirdim [15].
@@ -1793,27 +1793,27 @@ public List\<KonusmaSayisi\> \_htKonusmalar()
 Konuşma sayısı verilerini tablo satırlarını oluşturduğum metotta kullanarak, her
 bir konuda yapılmış konuşmaların sayısını gösterdim.
 
-1.  **Hata takip sisteminin kişisel web sayfaları**
+1.  **Proje takip sisteminin kişisel web sayfaları**
 
 Tablo oluşturmak, içeriklerini doldurmak, tablo verilerini eklemek, düzenlemek
 ve arşivlemek, konuşmaların gösterilmesi, konuşma eklemek, düzenlemek ve
 arşivlemek için kullandığım metotları değiştirmeden, sadece bu metotların aldığı
-parametreler üzerinde değişiklikler yaparak hata takip sisteminin diğer kişisel
+parametreler üzerinde değişiklikler yaparak proje takip sisteminin diğer kişisel
 web sayfalarını oluşturdum.
 
 ![3_41](https://3.bp.blogspot.com/-rxtxKFEz3sU/XM7uxT87y2I/AAAAAAAAC7I/917nvaKfTlcUncns9HVaLMLxJbZR4QcDgCLcBGAs/s1600/f29dceebfc09071e0206d58f82419466.png)
 
-Şekil 3.30. Hata takip sisteminin 1. kişisel web sayfasından ekran görüntüsü
+Şekil 3.30. Proje takip sisteminin 1. kişisel web sayfasından ekran görüntüsü
 
 ![3_42](https://3.bp.blogspot.com/-fFwYqE3C2v0/XM7uk92hGSI/AAAAAAAAC48/FRp2r1m-uiEFcbjSL32_tC5OIEBVpWqwgCLcBGAs/s1600/0ad57ff1205cec1f9bfa05774c4865fe.png)
 
-Şekil 3.31. Hata takip sisteminin 2. kişisel web sayfasından ekran görüntüsü
+Şekil 3.31. Proje takip sisteminin 2. kişisel web sayfasından ekran görüntüsü
 
 ![3_43](https://1.bp.blogspot.com/-vL7PydET8Gw/XM7uo9JnU3I/AAAAAAAAC5c/wsOTv40n9mELKbYOP_6ytxMu36L8mRICACLcBGAs/s1600/5a41665d35348997e713f23f6aae65c3.png)
 
-Şekil 3.32. Hata takip sisteminin 3. kişisel web sayfasından ekran görüntüsü
+Şekil 3.32. Proje takip sisteminin 3. kişisel web sayfasından ekran görüntüsü
 
-1.  **Hata takip sisteminin timeline yapısı**
+1.  **Proje takip sisteminin timeline yapısı**
 
 Diğer web sayfaların içeriğini de benzer şekilde oluşturduktan sonra, DevOps
 sayfasına timeline eklemek için internette araştırma yaptım. Araştırmalarım
@@ -2013,7 +2013,7 @@ function OlayOlustur(listMain, indeks) {
 }
 
 Kullanıcı timeline üzerinde her hangi bir olayın zamanını değiştirir veya olayı
-taşırsa SignalR çalıştırılarak, o anda hata takip sistemini kullanan diğer
+taşırsa SignalR çalıştırılarak, o anda proje takip sistemini kullanan diğer
 kullanıcıların da veri değişikliğini görüntüleyebilmesi için tetiklenecek şu
 metodu yazdım:
 
@@ -2084,7 +2084,7 @@ baslangicTarihi, string bitisTarihi)
 
 ![](https://4.bp.blogspot.com/-SRPxhpNk8Zw/XM7uwKLOe2I/AAAAAAAAC68/RsSwwbz5vn08nOha4ACC1oacLnIH5PCZwCLcBGAs/s1600/e68a3450e3aecf26b20c6ddf8ea87498.png)
 
-Şekil 3.34. Hata takip sisteminin timeline yapısı
+Şekil 3.34. Proje takip sisteminin timeline yapısı
 
 Görevi atanmamış konular ise, kullanıcısı olmayan alanda gösterilmektedir.
 Timeline başlangıç ve bitiş tarihlerini HataTakipMain veri tabanı tablosunun
@@ -2095,7 +2095,7 @@ Musteri niteliğinde sakladım.
 Şekil 3.35. HataTakipMain veri tabanı tablosunun timeline için Musteri
 niteliğinin içeriği
 
-1.  **Hata takip sisteminin e-posta gönderme sistemi**
+1.  **Proje takip sisteminin e-posta gönderme sistemi**
 
 En son olarak görev atanan kişilere ve herhangi bir konuda konuşması bulunup o
 konuya yeni bir konuşma eklendiğinde diğer kişilere e-posta gönderilecek metodu
@@ -2251,12 +2251,12 @@ konu, int tur)
 
 ![](https://4.bp.blogspot.com/-S-ZeEUr2g3k/XM7uuxsA7XI/AAAAAAAAC6k/x9ygU9pvJ6MtHPcWOPHYQ26HSgnnQmhpwCLcBGAs/s1600/cac6520e1f5237daed3e945085572fb6.png)
 
-Şekil 3.37. Hata takip sisteminde görev atamasından sonra gönderilen e-posta
+Şekil 3.37. Proje takip sisteminde görev atamasından sonra gönderilen e-posta
 içeriği
 
-1.  **Hata takip sisteminin yayımlanması**
+1.  **Proje takip sisteminin yayımlanması**
 
-Staj sürecimin sonuna geldiğim için hata takip sistemi projesini geliştirmeyi
+Staj sürecimin sonuna geldiğim için proje takip sistemi projesini geliştirmeyi
 bitirmek durumda kaldım. Rehberlik yapan bilgisayar mühendisinin isteği
 doğrultusunda, kuruluşta çalışan kişilerin geliştirdiğim sistemi kullanabilmesi
 için, bu projeyi kuruluşun kendi domain’ine aktarmamı istedi. Bana verdiği
@@ -2266,11 +2266,11 @@ burada yeni bir FTP hesabı oluşturdum.
 FileZilla yazılımını kullanarak bu FTP hesabı ile domain’e bağlandım.
 
 Geliştirdiğim projenin sadece gerekli dosyalarını sunucuya aktarmak için Visual
-Studio’da Proje’ye, ardından Yayımla Hata Takip’e bastım.
+Studio’da Proje’ye, ardından Yayımla Proje Takip’e bastım.
 
 ![](https://1.bp.blogspot.com/-MLAqUnV2924/XM7uoOE9gEI/AAAAAAAAC5Y/zBSh2BVpV98bn9aJPlHTwS2UoNlF9XSgwCLcBGAs/s1600/4d0daa6de3cf901871f2e47905f45b3b.png)
 
-Şekil 3.38. Hata takip sisteminin yayımlanması
+Şekil 3.38. Proje takip sisteminin yayımlanması
 
 Buradan C:\\publish\\takip klasörüne gerekli dosyaları publish yaptım. Bu
 dosyaları da FileZilla yazılımı ile sunucuya kopyaladım.
@@ -2283,7 +2283,7 @@ dosyasını elde ettim [18].
 
 ![](https://3.bp.blogspot.com/-ysOWBCrLaMA/XM7ut-J9OsI/AAAAAAAAC6Y/Bpy8S-AD6r09wR8_GB78IbIpFjQJPQqvQCLcBGAs/s1600/c0eaa73bf0d53414ae10a45efbf5834a.png)
 
-Şekil 3.39. Hata takip sistemi veri tabanının sql dosyası
+Şekil 3.39. Proje takip sistemi veri tabanının sql dosyası
 
 Bu sql dosyasını Turhost hosting web sitesinde oluşturduğum veri tabanına import
 ettim.
